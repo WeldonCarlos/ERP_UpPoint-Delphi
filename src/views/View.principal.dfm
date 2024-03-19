@@ -5,7 +5,7 @@ object ViewPrincipal: TViewPrincipal
   Caption = 'ViewPrincipal'
   ClientHeight = 480
   ClientWidth = 640
-  Color = clBtnFace
+  Color = 5395026
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
@@ -2128,27 +2128,119 @@ object ViewPrincipal: TViewPrincipal
     FFFFFFFFFF0001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
   WindowState = wsMaximized
   TextHeight = 15
-  object Panel1: TPanel
+  object PanelTopo: TPanel
     Left = 0
     Top = 0
     Width = 640
-    Height = 41
+    Height = 49
     Align = alTop
+    BevelOuter = bvNone
+    Color = 5395026
+    ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 96
-    ExplicitTop = 112
-    ExplicitWidth = 185
+    object PanelLogo: TPanel
+      Left = 0
+      Top = 0
+      Width = 177
+      Height = 49
+      Align = alLeft
+      BevelOuter = bvNone
+      Color = 4605510
+      ParentBackground = False
+      TabOrder = 0
+      object PanelLinhaTopo: TPanel
+        Left = 0
+        Top = 0
+        Width = 177
+        Height = 2
+        Align = alTop
+        BevelOuter = bvNone
+        Color = 1031129
+        ParentBackground = False
+        TabOrder = 0
+        ExplicitLeft = -16
+        ExplicitTop = 22
+      end
+      object PanelDadosLogo: TPanel
+        Left = 0
+        Top = 2
+        Width = 177
+        Height = 47
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 1
+        ExplicitTop = 8
+        object LblTituloEmpresa: TLabel
+          AlignWithMargins = True
+          Left = 21
+          Top = 8
+          Width = 129
+          Height = 36
+          Margins.Left = 21
+          Margins.Top = 8
+          Margins.Right = 27
+          Align = alClient
+          Caption = 'UPPoint - ERP '
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -21
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          ExplicitLeft = 23
+          ExplicitWidth = 135
+          ExplicitHeight = 30
+        end
+      end
+    end
     object Button1: TButton
-      Left = 564
-      Top = 1
+      Left = 565
+      Top = 0
       Width = 75
-      Height = 39
+      Height = 49
       Align = alRight
       Caption = 'Fechar'
-      TabOrder = 0
+      TabOrder = 1
       OnClick = Button1Click
-      ExplicitLeft = 548
-      ExplicitTop = 2
+      ExplicitLeft = 564
+      ExplicitTop = 1
+      ExplicitHeight = 39
+    end
+  end
+  object PanelMenu: TPanel
+    Left = 0
+    Top = 49
+    Width = 177
+    Height = 431
+    Align = alLeft
+    BevelOuter = bvNone
+    TabOrder = 1
+    ExplicitLeft = -6
+    ExplicitTop = 52
+  end
+  object PanelCentro: TPanel
+    Left = 177
+    Top = 49
+    Width = 463
+    Height = 431
+    Align = alClient
+    BevelOuter = bvNone
+    Color = clMenu
+    ParentBackground = False
+    TabOrder = 2
+    ExplicitLeft = 183
+    ExplicitTop = 55
+    object PanelFooter: TPanel
+      Left = 0
+      Top = 386
+      Width = 463
+      Height = 45
+      Align = alBottom
+      BevelOuter = bvNone
+      Color = 5395027
+      ParentBackground = False
+      TabOrder = 0
+      ExplicitTop = 392
     end
   end
 end

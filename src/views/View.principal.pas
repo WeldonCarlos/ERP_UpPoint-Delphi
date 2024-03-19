@@ -15,8 +15,15 @@ uses
 
 type
   TViewPrincipal = class(TForm)
-    Panel1: TPanel;
+    PanelTopo: TPanel;
+    PanelMenu: TPanel;
+    PanelCentro: TPanel;
+    PanelFooter: TPanel;
+    PanelLogo: TPanel;
+    PanelLinhaTopo: TPanel;
+    PanelDadosLogo: TPanel;
     Button1: TButton;
+    LblTituloEmpresa: TLabel;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
