@@ -1,9 +1,9 @@
-object ViewPrincipal: TViewPrincipal
+﻿object ViewPrincipal: TViewPrincipal
   Left = 333
   Top = 133
   BorderStyle = bsNone
   Caption = 'ViewPrincipal'
-  ClientHeight = 400
+  ClientHeight = 588
   ClientWidth = 763
   Color = 5395026
   Font.Charset = DEFAULT_CHARSET
@@ -2128,6 +2128,7 @@ object ViewPrincipal: TViewPrincipal
     FFFFFFFFFF0001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
   Position = poDesigned
   WindowState = wsMaximized
+  OnShow = FormShow
   TextHeight = 15
   object PanelTopo: TPanel
     Left = 0
@@ -2139,8 +2140,6 @@ object ViewPrincipal: TViewPrincipal
     Color = 5395026
     ParentBackground = False
     TabOrder = 0
-    ExplicitTop = -6
-    ExplicitWidth = 640
     object PanelLogo: TPanel
       Left = 0
       Top = 0
@@ -2151,7 +2150,6 @@ object ViewPrincipal: TViewPrincipal
       Color = 4605510
       ParentBackground = False
       TabOrder = 0
-      ExplicitHeight = 49
       object PanelLinhaTopo: TPanel
         Left = 0
         Top = 0
@@ -2162,8 +2160,6 @@ object ViewPrincipal: TViewPrincipal
         Color = 1031129
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = -16
-        ExplicitTop = 22
       end
       object PanelDadosLogo: TPanel
         Left = 0
@@ -2173,8 +2169,6 @@ object ViewPrincipal: TViewPrincipal
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitTop = 8
-        ExplicitHeight = 47
         object LblTituloEmpresa: TLabel
           AlignWithMargins = True
           Left = 21
@@ -2192,20 +2186,10 @@ object ViewPrincipal: TViewPrincipal
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 23
           ExplicitWidth = 135
           ExplicitHeight = 30
         end
       end
-    end
-    object Button1: TButton
-      Left = 316
-      Top = 6
-      Width = 58
-      Height = 39
-      Caption = 'Fechar'
-      TabOrder = 1
-      OnClick = Button1Click
     end
     object PanelVersao: TPanel
       Left = 177
@@ -2214,8 +2198,7 @@ object ViewPrincipal: TViewPrincipal
       Height = 51
       Align = alLeft
       BevelOuter = bvNone
-      TabOrder = 2
-      ExplicitHeight = 49
+      TabOrder = 1
       object LblVersao: TLabel
         AlignWithMargins = True
         Left = 20
@@ -2233,15 +2216,14 @@ object ViewPrincipal: TViewPrincipal
         Font.Name = 'Segoe UI'
         Font.Style = []
         ParentFont = False
-        ExplicitTop = 3
         ExplicitWidth = 64
       end
       object LblNumeroversao: TLabel
         AlignWithMargins = True
         Left = 29
-        Top = 24
+        Top = 29
         Width = 53
-        Height = 26
+        Height = 21
         Margins.Left = 29
         Margins.Right = 30
         Margins.Bottom = 1
@@ -2253,10 +2235,8 @@ object ViewPrincipal: TViewPrincipal
         Font.Name = 'Segoe UI'
         Font.Style = []
         ParentFont = False
-        ExplicitLeft = 32
-        ExplicitTop = 22
+        ExplicitTop = 24
         ExplicitWidth = 45
-        ExplicitHeight = 21
       end
     end
     object PanelUsuario: TPanel
@@ -2266,7 +2246,7 @@ object ViewPrincipal: TViewPrincipal
       Height = 51
       Align = alRight
       BevelOuter = bvNone
-      TabOrder = 3
+      TabOrder = 2
       object PanelLineUsuario: TPanel
         AlignWithMargins = True
         Left = 3
@@ -2280,9 +2260,6 @@ object ViewPrincipal: TViewPrincipal
         Color = 1031129
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitHeight = 51
       end
       object PanelImgUsuario: TPanel
         Left = 137
@@ -2292,7 +2269,6 @@ object ViewPrincipal: TViewPrincipal
         Align = alRight
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitLeft = 150
         object Image1: TImage
           Left = 0
           Top = 0
@@ -2313,7 +2289,6 @@ object ViewPrincipal: TViewPrincipal
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 2
-        ExplicitWidth = 142
         object LblUsuario: TLabel
           AlignWithMargins = True
           Left = 3
@@ -2331,8 +2306,7 @@ object ViewPrincipal: TViewPrincipal
           Font.Name = 'Segoe UI Semilight'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 21
-          ExplicitTop = 3
+          ExplicitLeft = 20
           ExplicitWidth = 106
           ExplicitHeight = 23
         end
@@ -2352,7 +2326,7 @@ object ViewPrincipal: TViewPrincipal
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 53
+          ExplicitLeft = 43
           ExplicitWidth = 83
         end
       end
@@ -2362,29 +2336,213 @@ object ViewPrincipal: TViewPrincipal
     Left = 0
     Top = 51
     Width = 177
-    Height = 349
+    Height = 537
     Align = alLeft
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = -6
-    ExplicitTop = 52
-    ExplicitHeight = 431
+    ExplicitHeight = 349
+    object PanelSair: TPanel
+      Left = 0
+      Top = 496
+      Width = 177
+      Height = 41
+      Align = alBottom
+      BevelOuter = bvNone
+      Color = 4605510
+      ParentBackground = False
+      TabOrder = 0
+      ExplicitLeft = 21
+      ExplicitTop = 168
+      ExplicitWidth = 185
+      object BtnSair: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 0
+        Width = 171
+        Height = 41
+        Cursor = crHandPoint
+        Margins.Top = 0
+        Margins.Bottom = 0
+        Align = alClient
+        DisabledImageName = 'BtnClientes'
+        Caption = '[ SAIR ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 6711039
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        OnClick = BtnSairClick
+        ExplicitTop = -9
+        ExplicitHeight = 50
+      end
+    end
+    object PanelShapeMenu: TPanel
+      Left = 0
+      Top = 0
+      Width = 4
+      Height = 496
+      Align = alLeft
+      BevelOuter = bvNone
+      TabOrder = 1
+      ExplicitHeight = 308
+      object ShapeMenu: TShape
+        Left = 0
+        Top = 0
+        Width = 4
+        Height = 50
+      end
+    end
+    object PanelDadosMenu: TPanel
+      Left = 4
+      Top = 0
+      Width = 173
+      Height = 496
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 2
+      ExplicitLeft = 21
+      ExplicitTop = 24
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+      object BtnProdutos: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 245
+        Width = 167
+        Height = 50
+        Cursor = crHandPoint
+        Margins.Top = 20
+        Margins.Bottom = 0
+        Align = alTop
+        DisabledImageName = 'BtnClientes'
+        Caption = '[ PRODUTOS ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        OnClick = BtnProdutosClick
+        ExplicitLeft = 6
+        ExplicitTop = 168
+      end
+      object BtnClientes: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 35
+        Width = 167
+        Height = 50
+        Cursor = crHandPoint
+        Margins.Top = 35
+        Margins.Bottom = 0
+        Align = alTop
+        DisabledImageName = 'BtnClientes'
+        Caption = '[ CLIENTES ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        OnClick = BtnClientesClick
+        ExplicitLeft = 0
+        ExplicitTop = 86
+      end
+      object BtnCaixa: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 105
+        Width = 167
+        Height = 50
+        Cursor = crHandPoint
+        Margins.Top = 20
+        Margins.Bottom = 0
+        Align = alTop
+        DisabledImageName = 'BtnClientes'
+        Caption = '[ CAIXA ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        OnClick = BtnCaixaClick
+        ExplicitLeft = 6
+        ExplicitTop = 60
+      end
+      object BtnFornecedores: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 175
+        Width = 167
+        Height = 50
+        Cursor = crHandPoint
+        Margins.Top = 20
+        Margins.Bottom = 0
+        Align = alTop
+        DisabledImageName = 'BtnClientes'
+        Caption = '[ FORNECEDORES ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        OnClick = BtnFornecedoresClick
+        ExplicitLeft = 0
+        ExplicitTop = 86
+      end
+      object BtnConfigurações: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 455
+        Width = 167
+        Height = 50
+        Cursor = crHandPoint
+        Margins.Top = 160
+        Margins.Bottom = 0
+        Align = alTop
+        DisabledImageName = 'BtnClientes'
+        Caption = '[ CONFIG ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        OnClick = BtnConfiguraçõesClick
+        ExplicitLeft = 6
+        ExplicitTop = 368
+      end
+    end
   end
   object PanelCentro: TPanel
     Left = 177
     Top = 51
     Width = 586
-    Height = 349
+    Height = 537
     Align = alClient
     BevelOuter = bvNone
     Color = clMenu
     ParentBackground = False
     TabOrder = 2
-    ExplicitWidth = 463
-    ExplicitHeight = 429
+    ExplicitHeight = 349
     object PanelFooter: TPanel
       Left = 0
-      Top = 306
+      Top = 494
       Width = 586
       Height = 43
       Align = alBottom
@@ -2392,12 +2550,11 @@ object ViewPrincipal: TViewPrincipal
       Color = 5395027
       ParentBackground = False
       TabOrder = 0
-      ExplicitTop = 386
-      ExplicitWidth = 463
+      ExplicitTop = 306
       object PanelLicenciado: TPanel
-        Left = 248
+        Left = 296
         Top = 0
-        Width = 338
+        Width = 290
         Height = 43
         Align = alRight
         BevelOuter = bvNone
@@ -2419,17 +2576,16 @@ object ViewPrincipal: TViewPrincipal
         object PanelConteudoLicenca: TPanel
           Left = 8
           Top = 0
-          Width = 330
+          Width = 282
           Height = 43
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 1
-          ExplicitWidth = 578
           object LblLicenciado: TLabel
             AlignWithMargins = True
             Left = 3
             Top = 0
-            Width = 306
+            Width = 258
             Height = 14
             Margins.Top = 0
             Margins.Right = 21
@@ -2443,16 +2599,17 @@ object ViewPrincipal: TViewPrincipal
             Font.Name = 'Segoe UI'
             Font.Style = []
             ParentFont = False
-            ExplicitTop = 3
-            ExplicitWidth = 217
-            ExplicitHeight = 22
+            ExplicitLeft = 167
+            ExplicitWidth = 94
+            ExplicitHeight = 17
           end
           object Label1: TLabel
             AlignWithMargins = True
             Left = 3
             Top = 17
-            Width = 307
+            Width = 259
             Height = 23
+            Cursor = crHandPoint
             Margins.Right = 20
             Align = alBottom
             Alignment = taRightJustify
@@ -2463,8 +2620,8 @@ object ViewPrincipal: TViewPrincipal
             Font.Name = 'Segoe UI'
             Font.Style = []
             ParentFont = False
-            ExplicitLeft = -53
-            ExplicitWidth = 334
+            ExplicitLeft = 133
+            ExplicitWidth = 129
           end
         end
       end
