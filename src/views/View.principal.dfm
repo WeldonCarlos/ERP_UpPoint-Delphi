@@ -1,10 +1,10 @@
 object ViewPrincipal: TViewPrincipal
-  Left = 0
-  Top = 0
+  Left = 333
+  Top = 133
   BorderStyle = bsNone
   Caption = 'ViewPrincipal'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 400
+  ClientWidth = 763
   Color = 5395026
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -2126,28 +2126,32 @@ object ViewPrincipal: TViewPrincipal
     FFFFFFFFE4000027FFFFFFFFFFFFFFFFFFFFFFFFEA000057FFFFFFFFFFFFFFFF
     FFFFFFFFF4BFFD2FFFFFFFFFFFFFFFFFFFFFFFFFFA00005FFFFFFFFFFFFFFFFF
     FFFFFFFFFF0001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  Position = poDesigned
   WindowState = wsMaximized
   TextHeight = 15
   object PanelTopo: TPanel
     Left = 0
     Top = 0
-    Width = 640
-    Height = 49
+    Width = 763
+    Height = 51
     Align = alTop
     BevelOuter = bvNone
     Color = 5395026
     ParentBackground = False
     TabOrder = 0
+    ExplicitTop = -6
+    ExplicitWidth = 640
     object PanelLogo: TPanel
       Left = 0
       Top = 0
       Width = 177
-      Height = 49
+      Height = 51
       Align = alLeft
       BevelOuter = bvNone
       Color = 4605510
       ParentBackground = False
       TabOrder = 0
+      ExplicitHeight = 49
       object PanelLinhaTopo: TPanel
         Left = 0
         Top = 0
@@ -2165,17 +2169,18 @@ object ViewPrincipal: TViewPrincipal
         Left = 0
         Top = 2
         Width = 177
-        Height = 47
+        Height = 49
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 1
         ExplicitTop = 8
+        ExplicitHeight = 47
         object LblTituloEmpresa: TLabel
           AlignWithMargins = True
           Left = 21
           Top = 8
           Width = 129
-          Height = 36
+          Height = 38
           Margins.Left = 21
           Margins.Top = 8
           Margins.Right = 27
@@ -2194,53 +2199,275 @@ object ViewPrincipal: TViewPrincipal
       end
     end
     object Button1: TButton
-      Left = 565
-      Top = 0
-      Width = 75
-      Height = 49
-      Align = alRight
+      Left = 316
+      Top = 6
+      Width = 58
+      Height = 39
       Caption = 'Fechar'
       TabOrder = 1
       OnClick = Button1Click
-      ExplicitLeft = 564
-      ExplicitTop = 1
-      ExplicitHeight = 39
+    end
+    object PanelVersao: TPanel
+      Left = 177
+      Top = 0
+      Width = 112
+      Height = 51
+      Align = alLeft
+      BevelOuter = bvNone
+      TabOrder = 2
+      ExplicitHeight = 49
+      object LblVersao: TLabel
+        AlignWithMargins = True
+        Left = 20
+        Top = 6
+        Width = 67
+        Height = 17
+        Margins.Left = 20
+        Margins.Top = 6
+        Margins.Right = 25
+        Align = alTop
+        Caption = '[ VERS'#195'O ]'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        ExplicitTop = 3
+        ExplicitWidth = 64
+      end
+      object LblNumeroversao: TLabel
+        AlignWithMargins = True
+        Left = 29
+        Top = 24
+        Width = 53
+        Height = 26
+        Margins.Left = 29
+        Margins.Right = 30
+        Margins.Bottom = 1
+        Align = alBottom
+        Caption = '1.0.0.0'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        ExplicitLeft = 32
+        ExplicitTop = 22
+        ExplicitWidth = 45
+        ExplicitHeight = 21
+      end
+    end
+    object PanelUsuario: TPanel
+      Left = 576
+      Top = 0
+      Width = 187
+      Height = 51
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 3
+      object PanelLineUsuario: TPanel
+        AlignWithMargins = True
+        Left = 3
+        Top = 12
+        Width = 2
+        Height = 27
+        Margins.Top = 12
+        Margins.Bottom = 12
+        Align = alLeft
+        BevelOuter = bvNone
+        Color = 1031129
+        ParentBackground = False
+        TabOrder = 0
+        ExplicitLeft = 0
+        ExplicitTop = 0
+        ExplicitHeight = 51
+      end
+      object PanelImgUsuario: TPanel
+        Left = 137
+        Top = 0
+        Width = 50
+        Height = 51
+        Align = alRight
+        BevelOuter = bvNone
+        TabOrder = 1
+        ExplicitLeft = 150
+        object Image1: TImage
+          Left = 0
+          Top = 0
+          Width = 50
+          Height = 51
+          Align = alClient
+          Center = True
+          ExplicitTop = 10
+          ExplicitWidth = 105
+          ExplicitHeight = 105
+        end
+      end
+      object PanelDadosUsuario: TPanel
+        Left = 8
+        Top = 0
+        Width = 129
+        Height = 51
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 2
+        ExplicitWidth = 142
+        object LblUsuario: TLabel
+          AlignWithMargins = True
+          Left = 3
+          Top = 5
+          Width = 123
+          Height = 20
+          Margins.Top = 5
+          Margins.Bottom = 0
+          Align = alClient
+          Alignment = taRightJustify
+          Caption = 'Nome Usu'#225'rio'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWhite
+          Font.Height = -17
+          Font.Name = 'Segoe UI Semilight'
+          Font.Style = []
+          ParentFont = False
+          ExplicitLeft = 21
+          ExplicitTop = 3
+          ExplicitWidth = 106
+          ExplicitHeight = 23
+        end
+        object LblPerfil: TLabel
+          AlignWithMargins = True
+          Left = 3
+          Top = 28
+          Width = 123
+          Height = 17
+          Margins.Bottom = 6
+          Align = alBottom
+          Alignment = taRightJustify
+          Caption = 'Administrador'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -13
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentFont = False
+          ExplicitLeft = 53
+          ExplicitWidth = 83
+        end
+      end
     end
   end
   object PanelMenu: TPanel
     Left = 0
-    Top = 49
+    Top = 51
     Width = 177
-    Height = 431
+    Height = 349
     Align = alLeft
     BevelOuter = bvNone
     TabOrder = 1
     ExplicitLeft = -6
     ExplicitTop = 52
+    ExplicitHeight = 431
   end
   object PanelCentro: TPanel
     Left = 177
-    Top = 49
-    Width = 463
-    Height = 431
+    Top = 51
+    Width = 586
+    Height = 349
     Align = alClient
     BevelOuter = bvNone
     Color = clMenu
     ParentBackground = False
     TabOrder = 2
-    ExplicitLeft = 183
-    ExplicitTop = 55
+    ExplicitWidth = 463
+    ExplicitHeight = 429
     object PanelFooter: TPanel
       Left = 0
-      Top = 386
-      Width = 463
-      Height = 45
+      Top = 306
+      Width = 586
+      Height = 43
       Align = alBottom
       BevelOuter = bvNone
       Color = 5395027
       ParentBackground = False
       TabOrder = 0
-      ExplicitTop = 392
+      ExplicitTop = 386
+      ExplicitWidth = 463
+      object PanelLicenciado: TPanel
+        Left = 248
+        Top = 0
+        Width = 338
+        Height = 43
+        Align = alRight
+        BevelOuter = bvNone
+        TabOrder = 0
+        object PanelLineLicenciado: TPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 8
+          Width = 2
+          Height = 27
+          Margins.Top = 8
+          Margins.Bottom = 8
+          Align = alLeft
+          BevelOuter = bvNone
+          Color = 1031129
+          ParentBackground = False
+          TabOrder = 0
+        end
+        object PanelConteudoLicenca: TPanel
+          Left = 8
+          Top = 0
+          Width = 330
+          Height = 43
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 1
+          ExplicitWidth = 578
+          object LblLicenciado: TLabel
+            AlignWithMargins = True
+            Left = 3
+            Top = 0
+            Width = 306
+            Height = 14
+            Margins.Top = 0
+            Margins.Right = 21
+            Margins.Bottom = 0
+            Align = alClient
+            Alignment = taRightJustify
+            Caption = 'Licenciado Para:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -13
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitTop = 3
+            ExplicitWidth = 217
+            ExplicitHeight = 22
+          end
+          object Label1: TLabel
+            AlignWithMargins = True
+            Left = 3
+            Top = 17
+            Width = 307
+            Height = 23
+            Margins.Right = 20
+            Align = alBottom
+            Alignment = taRightJustify
+            Caption = 'Up Studio Digital'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -17
+            Font.Name = 'Segoe UI'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = -53
+            ExplicitWidth = 334
+          end
+        end
+      end
     end
   end
 end

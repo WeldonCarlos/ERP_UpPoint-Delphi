@@ -24,6 +24,21 @@ type
     PanelDadosLogo: TPanel;
     Button1: TButton;
     LblTituloEmpresa: TLabel;
+    PanelVersao: TPanel;
+    LblVersao: TLabel;
+    LblNumeroversao: TLabel;
+    PanelUsuario: TPanel;
+    PanelLineUsuario: TPanel;
+    PanelImgUsuario: TPanel;
+    Image1: TImage;
+    PanelDadosUsuario: TPanel;
+    LblUsuario: TLabel;
+    LblPerfil: TLabel;
+    PanelLicenciado: TPanel;
+    PanelLineLicenciado: TPanel;
+    PanelConteudoLicenca: TPanel;
+    LblLicenciado: TLabel;
+    Label1: TLabel;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
