@@ -88,7 +88,7 @@
         <DCC_DcuOutput>D:\ERPDelphi\dcus\</DCC_DcuOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <Icon_MainIcon>C:\Users\Ninguem\Downloads\iconfinder-technologymachineelectronicdevice25-4026435_113356.ico</Icon_MainIcon>
+        <Icon_MainIcon>install\img\icons\icon.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -106,6 +106,11 @@
         <DCCReference Include="src\views\View.principal.pas">
             <Form>ViewPrincipal</Form>
             <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\services\Service.conexao.pas">
+            <Form>ServiceConexao</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
@@ -133,7 +138,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="4">
-                <DeployFile LocalName="Win32\Debug\ERPUpPoint.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="install\ERPUpPoint.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>ERPUpPoint.exe</RemoteName>
                         <Overwrite>true</Overwrite>
